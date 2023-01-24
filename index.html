@@ -354,10 +354,9 @@
                 </ul>
             </div>
             <form class="section-subscribe">
-                <label>
+                <label><span class="subscribe-text">Subscribe</span>
+                <input type="email" name="name" placeholder="E-mail" class="input-E-mail">
                 </label>
-                <input type="email" name="name" placeholder="E-mail">
-            </label>
                 <button type="submit" class="button-subscribe">Subscribe</button>
             </form>
         </div>
@@ -365,29 +364,34 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form>
-                <h2>Leave your contacts and we will call you back</h2>
-                <label>
-                    Name
-                    <input type="text" name="name"/>
+            <form class="form-field">
+                <h1 class="form-title">Leave your contacts and we will call you back</h2>
+                <label class="label">
+                    <span class="label-text">Name</span>
+                    <input type="text" name="name" class="input-name"/>
+                    <svg class="icon-name" width="12" height="12">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
                 </label>
                 <label>
-                    Phone
-                    <input type="phone" name="phone"/>
+                    <span class="label-text">Phone</span>
+                    <input type="phone" name="phone" class="input-phone"/>
                 </label>
                 <label>
-                    Email
-                    <input type="email" name="email"/> 
+                    <span class="label-text">Email</span>
+                    <input type="email" name="email" class="input-email"/> 
                 </label>
                 <label>
-                    Comment
-                <input type="feedback" name="comment"/>
+                    <span class="label-text">Comment</span>
+                <textarea type="feedback" placeholder="Text input" class="input-comment"></textarea>
                 </label>
+                <div class="checkbox-flexbox">
+                    <input type="checkbox" name="rules" class="checkbox" id="privacy">
+                    <label for="privacy" class="label-text" class="privacy-position">
+                    I accept the terms and conditions of the<span href="" class="privacy-policy">Privacy Policy</span>
+                    </label>
+                </div>
                 <button type="submit" class="button-send">Send</button>
-                <input type="checkbox" name="rules" class="checkbox">
-                <label>
-                    I accept the terms and conditions of the <span href="" class="privacy-policy">Privacy Policy</span>
-                </label>
             </form>
                 <button type="button" class="modal-close" data-modal-close>
                     <svg class="modal-close-button">

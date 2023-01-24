@@ -506,15 +506,45 @@ body{
     background: #31D0AA;
 }
 
-
-
 .background-footer{
     background-color: var(--black-color);
 }
 
+
+
 .section-subscribe{
     display: flex;
     display: inline-block;
+    display: flex;
+}
+
+.subscribe-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.input-E-mail{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--black-color);
+    width: 264px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(24/12);
+    align-items: center;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    outline: none;
+    margin-left: 80px;
+}
+.input-E-mail:focus,
+.input-E-mail:active{
+    border: 1px solid #4D5AE5;
 }
 
 .button-subscribe{
@@ -522,10 +552,18 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 24px;
-    gap: 16px;
     background: #4D5AE5;
     border-radius: 4px;
+    border: transparent;
+    color: #FFFFFF;
+    height: 40px;
+    padding: 8px 64px 8px 24px;
+    margin-left: 24px;
+    margin-top: 39px;
+}
+.button-subscribe:hover,
+.button-s:focus{
+    background: #404BBF;
 }
 
 
@@ -755,22 +793,113 @@ body{
 
 
 
+.form-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding-top: 30px;
+}
+
 label{
     display: flex;
     flex-direction: column;
-
 }
 
-.button-send{
+
+.form-field{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
-    background: #4D5AE5;
-    color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px;
+    gap: 8px;
+    width: 360px;
+    height: 336px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+}
+
+
+.input-name{
+    width: 360px;
+    height: 40px;
+    outline: none;
     border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-name:focus,
+.input-name:active{
+    border: 1px solid #4D5AE5;
+}
+
+.input-phone{
+    width: 360px;
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.input-phone:focus,
+.input-phone:active{
+    border: 1px solid #4D5AE5;
+}
+
+.input-email{
+    width: 360px;
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.input-email:focus,
+.input-email:active{
+    border: 1px solid #4D5AE5;
+}
+
+.input-comment{
+    position: relative;
+    width: 360px;
+    height: 120px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+}
+.input-comment:focus,
+.input-comment:active{
+    border: 1px solid #4D5AE5;
+}
+.input-comment::placeholder{
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.privacy-position{
+    margin-top: 16px;
+}
+
+.checkbox-flexbox{
+    display: flex;
+    display: row;
 }
 
 .checkbox{
@@ -783,6 +912,29 @@ label{
     color: #4D5AE5;
     text-decoration: underline;
 }
+
+.button-send{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 10px;
+    background: #4D5AE5;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    border: transparent;
+}
+.button-send:hover,
+.button-send:focus{
+    background: #404BBF;
+}
+
 
 
 
