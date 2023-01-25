@@ -364,22 +364,39 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form class="form-field">
-                <h1 class="form-title">Leave your contacts and we will call you back</h2>
-                <label class="label">
-                    <span class="label-text">Name</span>
-                    <input type="text" name="name" class="input-name"/>
-                    <svg class="icon-name" width="12" height="12">
-                        <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-button">
+                    <use href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="modal-label">
+                    <span class="modal-label-text">Name</span>
+                    <span class="modal-input-wrap">
+                        <input type="text" name="user-name" class="modal-input" required/>
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-modal-input-name"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label>
-                    <span class="label-text">Phone</span>
-                    <input type="phone" name="phone" class="input-phone"/>
+                <label class="modal-label">
+                    <span class="modal-label-text">Phone</span>
+                    <span class="modal-input-wrap">
+                        <input type="phone" name="user-phone" class="modal-input" required/>
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-modal-input-phone"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label>
-                    <span class="label-text">Email</span>
-                    <input type="email" name="email" class="input-email"/> 
+                <label class="modal-label">
+                    <span class="modal-label-text">Email</span>
+                    <span class="modal-input-wrap">
+                        <input type="text" name="user-email" class="modal-input" required/>
+                        <svg class="modal-input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-modal-input-email"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label>
                     <span class="label-text">Comment</span>
@@ -395,11 +412,6 @@
                 </div>
                 <button type="submit" class="button-send">Send</button>
             </form>
-                <button type="button" class="modal-close" data-modal-close>
-                    <svg class="modal-close-button">
-                        <use href="./images/icons.svg#cross"></use>
-                    </svg>
-                </button>
         </div>
     </div>
     <script src="./modal.js"></script>
