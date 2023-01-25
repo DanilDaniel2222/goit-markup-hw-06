@@ -512,7 +512,7 @@ body{
 
 
 
-.section-subscribe{
+.subscribe-section{
     display: flex;
     display: inline-block;
     display: flex;
@@ -527,7 +527,7 @@ body{
     margin-bottom: 16px;
     margin-left: 80px;
 }
-.input-E-mail{
+.footer-input-email{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--black-color);
@@ -542,12 +542,11 @@ body{
     outline: none;
     margin-left: 80px;
 }
-.input-E-mail:focus,
-.input-E-mail:active{
+.footer-input-email:focus{
     border: 1px solid #4D5AE5;
 }
 
-.button-subscribe{
+.subscribe-button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -561,9 +560,12 @@ body{
     margin-left: 24px;
     margin-top: 39px;
 }
-.button-subscribe:hover,
-.button-s:focus{
+.subscribe-button:hover,
+.subscribe-button:focus{
     background: #404BBF;
+}
+.icon-send{
+    position: absolute;
 }
 
 
@@ -859,7 +861,7 @@ label{
 
 
 
-.input-comment{
+.modal-input-comment{
     position: relative;
     width: 360px;
     height: 120px;
@@ -868,7 +870,7 @@ label{
     border: 1px solid rgba(33, 33, 33, 0.2);
     resize: none;
 }
-.input-comment:focus{
+.modal-input-comment:focus{
     border: 1px solid #4D5AE5;
 }
 .input-comment::placeholder{
@@ -881,6 +883,7 @@ label{
     margin-top: 8px;
     margin-left: 16px;
 }
+
 
 .privacy-position{
     margin-top: 16px;

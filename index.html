@@ -353,11 +353,14 @@
                     </li>
                 </ul>
             </div>
-            <form class="section-subscribe">
+            <form class="subscribe-section">
                 <label><span class="subscribe-text">Subscribe</span>
-                <input type="email" name="name" placeholder="E-mail" class="input-E-mail">
+                <input type="email" name="name" placeholder="E-mail" class="footer-input-email">
                 </label>
-                <button type="submit" class="button-subscribe">Subscribe</button>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+                <svg class="icon-send" width="24" height="20">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
             </form>
         </div>
     </footer>
@@ -399,15 +402,15 @@
                     </span>
                 </label>
                 <label>
-                    <span class="label-text">Comment</span>
-                <textarea type="feedback" placeholder="Text input" class="input-comment"></textarea>
+                    <span class="modal-label-text">Comment</span>
+                <textarea name="feedback" placeholder="Text input" class="modal-input-comment"></textarea>
                 </label>
                 <div class="checkbox-flexbox">
                     <input type="checkbox" name="rules" class="check_input" id="privacy">
                     <span class="check_box">
                     </span>
                     <label for="privacy" class="check" class="privacy-position">
-                    <div>I accept the terms and conditions of the<span href="" class="privacy-policy">Privacy Policy</span></div>
+                    <div>I accept the terms and conditions of the<a href="" class="privacy-policy">Privacy Policy</a></div>
                     </label>
                 </div>
                 <button type="submit" class="button-send">Send</button>
