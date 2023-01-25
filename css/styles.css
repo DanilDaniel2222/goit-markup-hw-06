@@ -800,7 +800,10 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 30px;
+    padding-top: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
 }
 
 label{
@@ -839,6 +842,7 @@ label{
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -12px;
 }
 .input-name:focus,
 .input-name:active{
@@ -902,15 +906,48 @@ label{
     display: row;
 }
 
-.checkbox{
+.check_box{
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-top: 6px;
+}
+
+.check_input:focus + .check_box,
+.check_input:hover + .check_box{
+    background: #404BBF;
+    border: transparent;
+}
+
+.check_input{
+    position: absoulute;
     display: flex;
     display: row;
     align-items: flex-start;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 6px;
 }
 
 .privacy-policy{
     color: #4D5AE5;
     text-decoration: underline;
+    margin-left: 4px;
 }
 
 .button-send{
@@ -927,7 +964,7 @@ label{
     height: 56px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
+    margin-top: 5px;
     border: transparent;
 }
 .button-send:hover,
