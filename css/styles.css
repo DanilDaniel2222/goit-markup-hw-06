@@ -544,6 +544,7 @@ body{
 }
 
 
+
 .subscribe-button{
     display: flex;
     align-items: center;
@@ -567,7 +568,7 @@ body{
 }
 
 .subcribe-icon-send{
-    fill: #FFFFFF;
+    fill: currentColor;
 }
 
 
