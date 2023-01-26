@@ -775,7 +775,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
     right: 24px;
     top: 24px;
     width: 24px;
@@ -785,7 +784,7 @@ body{
     background: #E7E9FC;
     color: #000000;
     cursor: pointer;
-    transition: background var(--transition-duration) var(--transition-timing-function);
+    transition: background var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
 .modal-close-button:hover,
 .modal-close-button:focus{
