@@ -503,7 +503,8 @@ body{
 }
 .footer-link:hover,
 .footer-link:focus{
-    background: #31D0AA;
+    /* background: #31D0AA; */
+    background: red;
 }
 
 .background-footer{
