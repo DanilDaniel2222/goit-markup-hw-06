@@ -503,8 +503,7 @@ body{
 }
 .footer-link:hover,
 .footer-link:focus{
-    /* background: #31D0AA; */
-    background: red;
+    background: #31D0AA;
 }
 
 .background-footer{
@@ -537,10 +536,12 @@ body{
     border-radius: 4px;
     outline: transparent;
     background-color: var(--black-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/12);
     letter-spacing: 0.02em;
+    color: #E7E9FC;
     padding-left: 16px;
 }
 
