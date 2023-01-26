@@ -35,6 +35,7 @@ body{
     --brand-white-color: #FFFFFF;
     --first-white-color: #F4F4FD;
     --second-white-color: #E7E9FC;
+    --checkbox-color: #404BBF;
     --transition-duration: 250ms;
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -897,6 +898,14 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.modal-privacy-checkbox:checked + .modal-privacy-text::before{
+    background-color: var(--checkbox-color);
+    background-image: url(../images/icon-check-mark);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
 .modal-privacy-text{
     font-style: normal;
     font-weight: 400;
