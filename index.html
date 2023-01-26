@@ -407,19 +407,18 @@
                         </svg>
                     </span>
                 </label>
-                <label>
+                <label class="modal-label-comment">
                     <span class="modal-label-text">Comment</span>
-                <textarea name="feedback" placeholder="Text input" class="modal-input-comment"></textarea>
+                    <textarea name="user-text" placeholder="Text input" class="modal-input-comment"></textarea>
                 </label>
-                <div class="checkbox-flexbox">
-                    <input type="checkbox" name="rules" class="check_input" id="privacy">
-                    <span class="check_box">
-                    </span>
-                    <label for="privacy" class="check privacy-position">
-                    I accept the terms and conditions of the<a href="" class="privacy-policy">Privacy Policy</a>
-                    </label>
-                </div>
-                <button type="submit" class="button-send">Send</button>
+                <label class="modal-label-privacy">
+                <input class="modal-privacy-checkbox visually-hidden" name="privacy" value="true" type="checkbox" required>
+                <span class="modal-privacy-text">
+                I accept the terms and conditions of the
+                <a class="modal-privacy-link" href="">Privacy Policy</a>
+                </span>
+                </label>
+                <button type="submit" class="modal-button-send">Send</button>
             </form>
         </div>
     </div>
