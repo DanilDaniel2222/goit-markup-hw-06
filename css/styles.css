@@ -771,7 +771,7 @@ body{
     transition: transform var(--transition-duration) var(--transition-timing-function);
   }
 
-.modal-close-button{
+.modal-close{
     position: absolute;
     display: flex;
     align-items: center;
@@ -787,8 +787,8 @@ body{
     cursor: pointer;
     transition: background var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
-.modal-close-button:hover,
-.modal-close-button:focus{
+.modal-close:hover,
+.modal-close:focus{
     background: #404BBF;
     color: #FFFFFF;
     outline-color: transparent;
