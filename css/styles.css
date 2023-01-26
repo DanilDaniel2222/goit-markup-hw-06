@@ -759,44 +759,43 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) skew(360deg);
+    transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 408px;
     height: 576px;
-    padding: 15px;
+    padding: 24px;
+    padding-top: 72px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition: transform var(--transition-duration) var(--transition-timing-function);
   }
 
-.modal-close{
+.modal-close-button{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     right: 24px;
     top: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #E7E9FC;
+    color: #000000;
     cursor: pointer;
-}
-.modal-close:hover,
-.modal-close:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    background: #404BBF;
-}
-
-.modal-close-button{
-    fill: #000000;
-    width: 8px;
-    height: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: fill var(--transition-duration) var(--transition-timing-function);
+    transition: background var(--transition-duration) var(--transition-timing-function);
 }
 .modal-close-button:hover,
 .modal-close-button:focus{
-    fill: #FFFFFF;
+    background: #404BBF;
+    color: #FFFFFF;
+    outline-color: transparent;
+}
+
+.modal-close-icon{
+    fill: currentColor;
 }
 
 
@@ -808,9 +807,6 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 55px;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 10px;
 }
 
@@ -827,9 +823,6 @@ label{
     padding: 0px;
     gap: 8px;
     width: 360px;
-    height: 336px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .modal-label-text{
