@@ -426,8 +426,8 @@ body{
 .customers-link:focus{
     border-color: #404BBF;
 }
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon{
+.customers-icon:hover,
+.customers-icon:focus{
     fill: #404BBF;
 }
 
@@ -771,11 +771,11 @@ body{
     transition: transform var(--transition-duration) var(--transition-timing-function);
   }
 
-.modal-close{
+.modal-close-button{
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 7px;
     right: 24px;
     top: 24px;
     width: 24px;
@@ -787,8 +787,8 @@ body{
     cursor: pointer;
     transition: background var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
-.modal-close:hover,
-.modal-close:focus{
+.modal-close-button:hover,
+.modal-close-button:focus{
     background: #404BBF;
     color: #FFFFFF;
     outline-color: transparent;
@@ -796,8 +796,14 @@ body{
 
 .modal-close-icon{
     fill: currentColor;
-}
+    height: 10px;
+    width: 10px;
 
+}
+.modal-close-icon:hover,
+.modal-close-icon:focus{
+    color: #FFFFFF;
+}
 
 
 .modal-title{
@@ -900,7 +906,7 @@ body{
 }
 .modal-privacy-checkbox:checked + .modal-privacy-text::before{
     background-color: var(--checkbox-color);
-    background-image: url(../images/icon-check-mark);
+    background-image: url(../images/icon-check-mark.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
