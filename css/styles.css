@@ -818,16 +818,18 @@ body{
 
 .modal-label{
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .modal-label-text{
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
     color: #8E8F99;
+    margin-bottom: 4px;
 }
 
 .modal-input-wrap{
@@ -842,7 +844,6 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 38px;
-    margin-top: 4px;
     transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-input:focus{
@@ -853,7 +854,7 @@ body{
 .modal-input-icon{
     position: absolute;
     left: 19px;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
@@ -875,6 +876,10 @@ body{
     padding: 8px 8px 8px 16px;
     resize: none;
     margin-top: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.04em;
     background: transparent;
     transition: border var(--transition-duration) var(--transition-timing-function);
 }
