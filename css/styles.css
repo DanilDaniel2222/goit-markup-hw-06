@@ -426,8 +426,8 @@ body{
 .customers-link:focus{
     border-color: #404BBF;
 }
-.customers-icon:hover,
-.customers-icon:focus{
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon{
     fill: #404BBF;
 }
 
@@ -511,12 +511,13 @@ body{
     background-color: var(--black-color);
 }
 
-
+.form-wraper{
+    margin-left: 80px;
+}
 
 .subscribe-section{
     display: flex;
     gap: 24px;
-    margin-left: 80px;
 }
 
 .subscribe-text{
@@ -526,7 +527,6 @@ body{
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-    margin-left: 80px;
 
 }
 .footer-input-E-mail{
@@ -832,6 +832,7 @@ body{
 
 .modal-input-wrap{
     position: relative;
+    margin-top: 4px;
 }
 
 .modal-input{
@@ -841,6 +842,7 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 38px;
+    margin-top: 4px;
     transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-input:focus{
@@ -862,7 +864,6 @@ body{
 
 .modal-label-comment{
     display: block;
-    margin-bottom: 16px;
 }
 .modal-input-comment{
     display: block;
@@ -873,6 +874,7 @@ body{
     outline: none;
     padding: 8px 8px 8px 16px;
     resize: none;
+    margin-top: 4px;
     background: transparent;
     transition: border var(--transition-duration) var(--transition-timing-function);
 }
@@ -887,10 +889,13 @@ body{
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
     margin-top: 8px;
-    margin-left: 16px;
+    margin-bottom: 16px;
 }
 
-
+.modal-label-privacy{
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
 
 .visually-hidden{
     position: absolute;
@@ -921,7 +926,6 @@ body{
     color: #757575;
     display: flex;
     gap: 4px;
-    margin-bottom: 24px;
 }
 .modal-privacy-text::before{
     content: "";
@@ -947,6 +951,7 @@ body{
     width: 169px;
     height: 56px;
     margin: 0 auto;
+    margin-bottom: 24px;
     padding: 16px 32px;
     font-style: normal;
     font-weight: 500;
